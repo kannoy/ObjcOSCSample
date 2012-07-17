@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OSCPort.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIAccelerometerDelegate>{
+
+    OSCPort* port;
+    
+}
+@property (strong, nonatomic) IBOutlet UILabel *xaccel;
+@property (strong, nonatomic) IBOutlet UILabel *yaccel;
+@property (strong, nonatomic) IBOutlet UILabel *zaccel;
+@property (strong, nonatomic) IBOutlet UILabel *degree1;
+@property (strong, nonatomic) IBOutlet UILabel *degree2;
+@property (strong, nonatomic) IBOutlet UILabel *degree3;
+
 
 @end

@@ -21,6 +21,14 @@
 		67430F2715B5621F00994172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67430F0515B5621F00994172 /* Foundation.framework */; };
 		67430F2F15B5621F00994172 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67430F2D15B5621F00994172 /* InfoPlist.strings */; };
 		67430F3215B5621F00994172 /* AcceleromatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67430F3115B5621F00994172 /* AcceleromatorTests.m */; };
+		67430F4515B56C2A00994172 /* .FBCIndex in Resources */ = {isa = PBXBuildFile; fileRef = 67430F3C15B56C2A00994172 /* .FBCIndex */; };
+		67430F4615B56C2A00994172 /* .FBCSemaphoreFile in Resources */ = {isa = PBXBuildFile; fileRef = 67430F3E15B56C2A00994172 /* .FBCSemaphoreFile */; };
+		67430F4715B56C2A00994172 /* OSC-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 67430F3F15B56C2A00994172 /* OSC-client.c */; };
+		67430F4815B56C2A00994172 /* OSC-timetag.c in Sources */ = {isa = PBXBuildFile; fileRef = 67430F4115B56C2A00994172 /* OSC-timetag.c */; };
+		67430F4915B56C2A00994172 /* OSCPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 67430F4415B56C2A00994172 /* OSCPort.m */; };
+		67430F4A15B56E0300994172 /* OSCPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 67430F4415B56C2A00994172 /* OSCPort.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		67430F4B15B56E3E00994172 /* OSC-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 67430F3F15B56C2A00994172 /* OSC-client.c */; };
+		67430F4C15B56E4300994172 /* OSC-timetag.c in Sources */ = {isa = PBXBuildFile; fileRef = 67430F4115B56C2A00994172 /* OSC-timetag.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +46,30 @@
 		67430F0315B5621F00994172 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		67430F0515B5621F00994172 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		67430F0715B5621F00994172 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		67430F0B15B5621F00994172 /* Acceleromator-Info.plist */ = {isa = PBXFileReference; path = "Acceleromator-Info.plist"; sourceTree = "<group>"; };
+		67430F0B15B5621F00994172 /* Acceleromator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Acceleromator-Info.plist"; sourceTree = "<group>"; };
 		67430F0D15B5621F00994172 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67430F0F15B5621F00994172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		67430F1115B5621F00994172 /* Acceleromator-Prefix.pch */ = {isa = PBXFileReference; path = "Acceleromator-Prefix.pch"; sourceTree = "<group>"; };
-		67430F1215B5621F00994172 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		67430F1115B5621F00994172 /* Acceleromator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Acceleromator-Prefix.pch"; sourceTree = "<group>"; };
+		67430F1215B5621F00994172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67430F1315B5621F00994172 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67430F1615B5621F00994172 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		67430F1915B5621F00994172 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		67430F1B15B5621F00994172 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		67430F1B15B5621F00994172 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		67430F1C15B5621F00994172 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		67430F2315B5621F00994172 /* AcceleromatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcceleromatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67430F2415B5621F00994172 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		67430F2C15B5621F00994172 /* AcceleromatorTests-Info.plist */ = {isa = PBXFileReference; path = "AcceleromatorTests-Info.plist"; sourceTree = "<group>"; };
+		67430F2C15B5621F00994172 /* AcceleromatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AcceleromatorTests-Info.plist"; sourceTree = "<group>"; };
 		67430F2E15B5621F00994172 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		67430F3015B5621F00994172 /* AcceleromatorTests.h */ = {isa = PBXFileReference; path = AcceleromatorTests.h; sourceTree = "<group>"; };
+		67430F3015B5621F00994172 /* AcceleromatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcceleromatorTests.h; sourceTree = "<group>"; };
 		67430F3115B5621F00994172 /* AcceleromatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcceleromatorTests.m; sourceTree = "<group>"; };
+		67430F3C15B56C2A00994172 /* .FBCIndex */ = {isa = PBXFileReference; lastKnownFileType = file; path = .FBCIndex; sourceTree = "<group>"; };
+		67430F3E15B56C2A00994172 /* .FBCSemaphoreFile */ = {isa = PBXFileReference; lastKnownFileType = file; path = .FBCSemaphoreFile; sourceTree = "<group>"; };
+		67430F3F15B56C2A00994172 /* OSC-client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-client.c"; sourceTree = "<group>"; };
+		67430F4015B56C2A00994172 /* OSC-client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-client.h"; sourceTree = "<group>"; };
+		67430F4115B56C2A00994172 /* OSC-timetag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-timetag.c"; sourceTree = "<group>"; };
+		67430F4215B56C2A00994172 /* OSC-timetag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-timetag.h"; sourceTree = "<group>"; };
+		67430F4315B56C2A00994172 /* OSCPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSCPort.h; path = Acceleromator/OSCPort.h; sourceTree = "<group>"; };
+		67430F4415B56C2A00994172 /* OSCPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSCPort.m; path = Acceleromator/OSCPort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +99,9 @@
 		67430EF415B5621E00994172 = {
 			isa = PBXGroup;
 			children = (
+				67430F3B15B56C2A00994172 /* OSC-Client */,
+				67430F4315B56C2A00994172 /* OSCPort.h */,
+				67430F4415B56C2A00994172 /* OSCPort.m */,
 				67430F0915B5621F00994172 /* Acceleromator */,
 				67430F2A15B5621F00994172 /* AcceleromatorTests */,
 				67430F0215B5621F00994172 /* Frameworks */,
@@ -152,6 +171,28 @@
 				67430F2D15B5621F00994172 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67430F3B15B56C2A00994172 /* OSC-Client */ = {
+			isa = PBXGroup;
+			children = (
+				67430F3C15B56C2A00994172 /* .FBCIndex */,
+				67430F3D15B56C2A00994172 /* .FBCLockFolder */,
+				67430F3F15B56C2A00994172 /* OSC-client.c */,
+				67430F4015B56C2A00994172 /* OSC-client.h */,
+				67430F4115B56C2A00994172 /* OSC-timetag.c */,
+				67430F4215B56C2A00994172 /* OSC-timetag.h */,
+			);
+			name = "OSC-Client";
+			path = "Acceleromator/OSC-Client";
+			sourceTree = "<group>";
+		};
+		67430F3D15B56C2A00994172 /* .FBCLockFolder */ = {
+			isa = PBXGroup;
+			children = (
+				67430F3E15B56C2A00994172 /* .FBCSemaphoreFile */,
+			);
+			path = .FBCLockFolder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				67430F2F15B5621F00994172 /* InfoPlist.strings in Resources */,
+				67430F4515B56C2A00994172 /* .FBCIndex in Resources */,
+				67430F4615B56C2A00994172 /* .FBCSemaphoreFile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67430F4C15B56E4300994172 /* OSC-timetag.c in Sources */,
+				67430F4B15B56E3E00994172 /* OSC-client.c in Sources */,
+				67430F4A15B56E0300994172 /* OSCPort.m in Sources */,
 				67430F1015B5621F00994172 /* main.m in Sources */,
 				67430F1415B5621F00994172 /* AppDelegate.m in Sources */,
 				67430F1D15B5621F00994172 /* ViewController.m in Sources */,
@@ -273,6 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67430F3215B5621F00994172 /* AcceleromatorTests.m in Sources */,
+				67430F4715B56C2A00994172 /* OSC-client.c in Sources */,
+				67430F4815B56C2A00994172 /* OSC-timetag.c in Sources */,
+				67430F4915B56C2A00994172 /* OSCPort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
