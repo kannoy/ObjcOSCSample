@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+#define HOST "192.168.0.8"
+#define PORT 7000
+
 @interface ViewController ()
 
 @end
@@ -28,7 +31,7 @@
     accel.delegate = self;
     accel.updateInterval = 1.0f / 10.0f; 
     
-    port = [OSCPort oscPortToAddress:"192.168.0.8"  portNumber: 7000];
+    port = [OSCPort oscPortToAddress:HOST  portNumber: PORT];
     
 }
 
