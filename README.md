@@ -1,6 +1,6 @@
 ObjcOSCSample
 ================
-ObjcOSCSample is a sample application to use osc(Open Sound Protocol) on your iPhone. This application uses [ObjcOSC Library](http://www.illposed.com/software/objcosc.html).
+ObjcOSCSample is a sample application to use osc(Open Sound Control) on your iPhone. This application uses [ObjcOSC Library](http://www.illposed.com/software/objcosc.html).
 
 ### Usage
 
